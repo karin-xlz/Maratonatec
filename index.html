@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Campo à Mesa: A Jornada do Morango</title>
-      <link rel="icon" href="morango.png">
+    <title>Da Floresta à Mesa: A Jornada do Açaí</title>
+    <link rel="icon" href="acai.png">
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
         }
         
         body {
-            background-color: #fce4ec;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
             color: #333;
@@ -26,7 +26,7 @@
         }
         
         header {
-            background-color: #e91e63;
+            background-color: #4b0082;
             color: white;
             padding: 30px 0;
             text-align: center;
@@ -39,7 +39,7 @@
             font-size: 2.5rem;
         }
         
-        .strawberry-icon {
+        .acai-icon {
             font-size: 3rem;
             margin-bottom: 15px;
             display: block;
@@ -54,7 +54,7 @@
         }
         
         .intro h2 {
-            color: #e91e63;
+            color: #4b0082;
             margin-top: 0;
         }
         
@@ -78,7 +78,7 @@
         
         .terminal-title {
             font-weight: bold;
-            color: #FF7043;
+            color: #9370DB;
         }
         
         .terminal-controls span {
@@ -147,13 +147,13 @@
         }
         
         .site-card h3 {
-            color: #e91e63;
+            color: #4b0082;
             margin-top: 0;
         }
         
         .site-card a {
             display: inline-block;
-            background-color: #e91e63;
+            background-color: #4b0082;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -163,7 +163,7 @@
         }
         
         .site-card a:hover {
-            background-color: #c2185b;
+            background-color: #6a5acd;
             transform: translateY(-2px);
         }
         
@@ -188,25 +188,25 @@
 <body>
     <header>
         <div class="container">
-            <span class="strawberry-icon">🍓</span>
-            <h1>Do Campo à Mesa: A Jornada do Morango </h1>
-            <p>Tudo sobre o fruto mais vermelho e suculento!</p>
+            <span class="acai-icon">🟣</span>
+            <h1>Da Floresta à Mesa: A Jornada do Açaí</h1>
+            <p>Tudo sobre o superalimento amazônico!</p>
         </div>
     </header>
     
     <div class="container">
         <div class="intro">
-            <h2>Conheça o Morango</h2>
-            <p>O morango (Fragaria × ananassa) é uma fruta vermelha, suculenta e aromática, muito apreciada em todo o mundo. Originário da Europa, o morango moderno é resultado de cruzamentos entre espécies americanas e europeias no século XVIII.</p>
+            <h2>Conheça o Açaí</h2>
+            <p>O açaí (Euterpe oleracea) é um fruto roxo, energético e nutritivo, originário da região amazônica e cada vez mais popular em todo o Brasil e no mundo. Tradicionalmente consumido pelos povos indígenas, o açaí se tornou um símbolo da cultura alimentar brasileira.</p>
             
-            <p>Rico em vitamina C, flavonoides e antioxidantes, o morango oferece diversos benefícios à saúde, incluindo fortalecimento do sistema imunológico e ação anti-inflamatória. Além disso, é versátil na culinária, podendo ser consumido fresco, em doces, geleias, sorvetes e diversas outras preparações.</p>
+            <p>Rico em antocianinas (antioxidantes), ômega-9, fibras e minerais como cálcio e potássio, o açaí oferece diversos benefícios à saúde, incluindo aumento de energia, combate ao envelhecimento precoce e melhora da função cardiovascular. É consumido principalmente como polpa gelada, acompanhado de granola, frutas e outros complementos.</p>
             
-            <p>No Brasil, os maiores produtores estão nas regiões sul e sudeste, com destaque para Minas Gerais, Rio Grande do Sul e São Paulo. A colheita ocorre principalmente entre agosto e novembro.</p>
+            <p>O Pará é o maior produtor nacional, responsável por mais de 90% da produção brasileira. A colheita ocorre principalmente entre agosto e dezembro, quando os cachos estão maduros.</p>
         </div>
         
         <div class="terminal">
             <div class="terminal-header">
-                <div class="terminal-title">Terminal de Navegação - Morangos</div>
+                <div class="terminal-title">Terminal de Navegação - Açaí</div>
                 <div class="terminal-controls">
                     <span class="close"></span>
                     <span class="minimize"></span>
@@ -214,16 +214,16 @@
                 </div>
             </div>
             <div class="terminal-body" id="terminal-output">
-                <div>Bem-vindo ao Terminal de Navegação sobre Morangos!</div>
+                <div>Bem-vindo ao Terminal de Navegação sobre Açaí!</div>
                 <div>Digite um dos seguintes comandos para acessar informações:</div>
                 <br>
-                <div>- <strong>cultivo</strong>: Técnicas de cultivo de morangos</div>
-                <div>- <strong>receitas</strong>: Receitas deliciosas com morango</div>
+                <div>- <strong>cultivo</strong>: Técnicas de cultivo do açaí</div>
+                <div>- <strong>receitas</strong>: Formas de consumo do açaí</div>
                 <div>- <strong>beneficios</strong>: Benefícios para a saúde</div>
-                <div>- <strong>variedades</strong>: Tipos de morango</div>
+                <div>- <strong>variedades</strong>: Tipos de açaí</div>
                 <div>- <strong>limpar</strong>: Limpa o terminal</div>
                 <br>
-                <div>Exemplo: <span style="color: #69F0AE;">></span> receitas</div>
+                <div>Exemplo: <span style="color: #69F0AE;">></span> beneficios</div>
             </div>
             <div class="command-line">
                 <span class="prompt">></span>
@@ -232,36 +232,36 @@
         </div>
         
         <div class="site-card" id="cultivo-card">
-            <h3>Técnicas de Cultivo de Morango</h3>
-            <p>Aprenda as melhores práticas para cultivar morangos em casa ou em escala comercial. O cultivo de morangos requer cuidados específicos com solo, irrigação e controle de pragas.</p>
-            <p>Os morangos preferem solos bem drenados, ricos em matéria orgânica, com pH entre 5,5 e 6,5. A exposição solar deve ser de pelo menos 6 horas diárias.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Acesse a Embrapa Morango</a>
+            <h3>Técnicas de Cultivo do Açaí</h3>
+            <p>O cultivo do açaizeiro é tradicional na região amazônica, mas vem se expandindo para outras áreas do Brasil. Conheça os métodos de plantio e manejo:</p>
+            <p>Os açaizeiros preferem solos úmidos, como várzeas e áreas próximas a rios. O plantio é feito principalmente por sementes, com espaçamento de 5x5 metros. A colheita começa após 4-5 anos e pode durar décadas.</p>
+            <a href="#" target="_blank">Acesse a Embrapa Açaí</a>
         </div>
         
         <div class="site-card" id="receitas-card">
-            <h3>Receitas com Morango</h3>
-            <p>Descubra receitas incríveis para aproveitar os morangos na culinária. Desde sobremesas clássicas até pratos inovadores que combinam doce e salgado.</p>
-            <p>Algumas sugestões: torta de morango, mousse, geleia, sorvete, salada com folhas verdes, molho agridoce para carnes e drinks refrescantes.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Receitas no TudoGostoso</a>
+            <h3>Formas de Consumir Açaí</h3>
+            <p>Descubra as diversas maneiras de consumir o açaí, desde a forma tradicional paraense até as adaptações modernas:</p>
+            <p>Na região norte, o açaí é consumido gelado e sem açúcar, acompanhado de farinha de tapioca ou peixe. No sudeste, é comum com granola, banana e mel. Também pode ser usado em smoothies, bowls, sorvetes e até pratos salgados.</p>
+            <a href="#" target="_blank">Receitas com Açaí</a>
         </div>
         
         <div class="site-card" id="beneficios-card">
-            <h3>Benefícios do Morango para a Saúde</h3>
-            <p>Os morangos são ricos em nutrientes essenciais e compostos antioxidantes que trazem diversos benefícios à saúde.</p>
-            <p>Principais benefícios: melhora a saúde cardiovascular, fortalece o sistema imunológico, ajuda no controle do açúcar no sangue, possui ação anti-inflamatória e contribui para a saúde da pele.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Benefícios na Healthline</a>
+            <h3>Benefícios do Açaí para a Saúde</h3>
+            <p>O açaí é considerado um superalimento devido à sua densidade nutricional e propriedades funcionais:</p>
+            <p>Principais benefícios: alto poder antioxidante, fonte de energia, melhora o colesterol, protege o coração, fortalece o sistema imunológico, ajuda no controle da pressão arterial e tem ação anti-inflamatória.</p>
+            <a href="#" target="_blank">Benefícios comprovados</a>
         </div>
         
         <div class="site-card" id="variedades-card">
-            <h3>Variedades de Morango</h3>
-            <p>Existem diversas variedades de morango, cada uma com características específicas de sabor, tamanho, cor e resistência.</p>
-            <p>Algumas variedades populares: Albion (doce e firme), Camarosa (grande e vermelho intenso), Festival (sabor equilibrado), Oso Grande (muito grande), San Andreas (longa vida útil).</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Variedades no Radar Agrícola</a>
+            <h3>Variedades de Açaí</h3>
+            <p>Existem diferentes tipos de açaí, variando principalmente no tamanho do fruto e na produtividade:</p>
+            <p>As principais variedades são: Açaí Roxo (mais comum), Açaí Branco (mais raro), Açaí Espada (cachos maiores), Açaí Chumbinho (frutos pequenos e numerosos) e Açaí Açu (frutos maiores).</p>
+            <a href="#" target="_blank">Tipos de Açaí</a>
         </div>
     </div>
     
     <footer>
-        <p>© 2025 Do Campo à Mesa: A Jornada do Morango | Todos os direitos reservados à Isa22 & professor-rafael</p>
+        <p>© 2025 Da Floresta à Mesa: A Jornada do Açaí | Todos os direitos reservados</p>
     </footer>
 
     <script>
@@ -269,19 +269,19 @@
         const commands = {
             'cultivo': {
                 card: 'cultivo-card',
-                message: 'Abrindo informações sobre cultivo de morangos...'
+                message: 'Abrindo informações sobre cultivo do açaí...'
             },
             'receitas': {
                 card: 'receitas-card',
-                message: 'Carregando receitas deliciosas com morango...'
+                message: 'Carregando formas de consumo do açaí...'
             },
             'beneficios': {
                 card: 'beneficios-card',
-                message: 'Mostrando benefícios do morango para saúde...'
+                message: 'Mostrando benefícios do açaí para saúde...'
             },
             'variedades': {
                 card: 'variedades-card',
-                message: 'Exibindo diferentes variedades de morango...'
+                message: 'Exibindo diferentes variedades de açaí...'
             },
             'limpar': {
                 action: function() {
@@ -293,55 +293,58 @@
                 action: function() {
                     addTerminalOutput('<div>Comandos disponíveis:</div>');
                     addTerminalOutput('<div>- cultivo: Técnicas de cultivo</div>');
-                    addTerminalOutput('<div>- receitas: Receitas com morango</div>');
+                    addTerminalOutput('<div>- receitas: Formas de consumo</div>');
                     addTerminalOutput('<div>- beneficios: Benefícios para saúde</div>');
-                    addTerminalOutput('<div>- variedades: Tipos de morango</div>');
+                    addTerminalOutput('<div>- variedades: Tipos de açaí</div>');
                     addTerminalOutput('<div>- limpar: Limpa o terminal</div>');
                 }
             }
         };
 
-       // Configurar o input de comando
-const commandInput = document.getElementById('command-input');
-commandInput.addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        const command = this.value.trim(); // Removi o toLowerCase() para manter case sensitivity se necessário
-        this.value = '';
-        
-        // Adiciona o comando digitado ao terminal com formatação melhorada
-        addTerminalOutput(`<div class="command-line"><span class="prompt">></span> <span class="command">${command}</span></div>`);
-        
-        if (commands[command.toLowerCase()]) { // Mantém a comparação em lowercase
-            if (commands[command.toLowerCase()].card) {
-                // Esconder todos os cards primeiro
-                document.querySelectorAll('.site-card').forEach(card => {
-                    card.classList.remove('active');
-                });
+        // Configurar o input de comando
+        const commandInput = document.getElementById('command-input');
+        commandInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const command = this.value.trim();
+                this.value = '';
                 
-                // Mostrar mensagem no terminal
-                addTerminalOutput(commands[command.toLowerCase()].message);
+                // Adiciona o comando digitado ao terminal com formatação melhorada
+                addTerminalOutput(`<div class="command-line"><span class="prompt">></span> <span class="command">${command}</span></div>`);
                 
-                // Mostrar o card correspondente
-                document.getElementById(commands[command.toLowerCase()].card).classList.add('active');
-            } else if (commands[command.toLowerCase()].action) {
-                commands[command.toLowerCase()].action();
+                if (commands[command.toLowerCase()]) {
+                    if (commands[command.toLowerCase()].card) {
+                        // Esconder todos os cards primeiro
+                        document.querySelectorAll('.site-card').forEach(card => {
+                            card.classList.remove('active');
+                        });
+                        
+                        // Mostrar mensagem no terminal
+                        addTerminalOutput(commands[command.toLowerCase()].message);
+                        
+                        // Mostrar o card correspondente
+                        document.getElementById(commands[command.toLowerCase()].card).classList.add('active');
+                    } else if (commands[command.toLowerCase()].action) {
+                        commands[command.toLowerCase()].action();
+                    }
+                } else {
+                    addTerminalOutput(`<div class="error">Comando não reconhecido: "${command}". Digite "ajuda" para ver os comandos disponíveis.</div>`);
+                }
             }
-        } else {
-            addTerminalOutput(`<div class="error">Comando não reconhecido: "${command}". Digite "ajuda" para ver os comandos disponíveis.</div>`);
+        });
+
+        // Função para adicionar texto ao terminal
+        function addTerminalOutput(text) {
+            const terminalOutput = document.getElementById('terminal-output');
+            const newElement = document.createElement('div');
+            newElement.innerHTML = text;
+            terminalOutput.appendChild(newElement);
+            terminalOutput.scrollTop = terminalOutput.scrollHeight;
         }
-    }
-});
 
-// Função para adicionar texto ao terminal
-function addTerminalOutput(text) {
-    const terminalOutput = document.getElementById('terminal-output');
-    const newElement = document.createElement('div');
-    newElement.innerHTML = text;
-    terminalOutput.appendChild(newElement);
-    terminalOutput.scrollTop = terminalOutput.scrollHeight;
-}
-
-// Focar no input quando a página carregar
-window.onload = function() {
-    commandInput.focus();
-};
+        // Focar no input quando a página carregar
+        window.onload = function() {
+            commandInput.focus();
+        };
+    </script>
+</body>
+</html>
