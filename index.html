@@ -301,49 +301,47 @@
             }
         };
 
-        // Configurar o input de comando
-        const commandInput = document.getElementById('command-input');
-        commandInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                const command = this.value.toLowerCase().trim();
-                this.value = '';
+       // Configurar o input de comando
+const commandInput = document.getElementById('command-input');
+commandInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        const command = this.value.trim(); // Removi o toLowerCase() para manter case sensitivity se necessário
+        this.value = '';
+        
+        // Adiciona o comando digitado ao terminal com formatação melhorada
+        addTerminalOutput(`<div class="command-line"><span class="prompt">></span> <span class="command">${command}</span></div>`);
+        
+        if (commands[command.toLowerCase()]) { // Mantém a comparação em lowercase
+            if (commands[command.toLowerCase()].card) {
+                // Esconder todos os cards primeiro
+                document.querySelectorAll('.site-card').forEach(card => {
+                    card.classList.remove('active');
+                });
                 
-                addTerminalOutput(`<div><span style="color: #69F0AE;">></span> ${command}</div>`);
+                // Mostrar mensagem no terminal
+                addTerminalOutput(commands[command.toLowerCase()].message);
                 
-                if (commands[command]) {
-                    if (commands[command].card) {
-                        // Esconder todos os cards primeiro
-                        document.querySelectorAll('.site-card').forEach(card => {
-                            card.classList.remove('active');
-                        });
-                        
-                        // Mostrar mensagem no terminal
-                        addTerminalOutput(commands[command].message);
-                        
-                        // Mostrar o card correspondente
-                        document.getElementById(commands[command].card).classList.add('active');
-                    } else if (commands[command].action) {
-                        commands[command].action();
-                    }
-                } else {
-                    addTerminalOutput(`Comando não reconhecido: "${command}". Digite "ajuda" para ver os comandos disponíveis.`);
-                }
+                // Mostrar o card correspondente
+                document.getElementById(commands[command.toLowerCase()].card).classList.add('active');
+            } else if (commands[command.toLowerCase()].action) {
+                commands[command.toLowerCase()].action();
             }
-        });
-
-        // Função para adicionar texto ao terminal
-        function addTerminalOutput(text) {
-            const terminalOutput = document.getElementById('terminal-output');
-            const newElement = document.createElement('div');
-            newElement.innerHTML = text;
-            terminalOutput.appendChild(newElement);
-            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        } else {
+            addTerminalOutput(`<div class="error">Comando não reconhecido: "${command}". Digite "ajuda" para ver os comandos disponíveis.</div>`);
         }
+    }
+});
 
-        // Focar no input quando a página carregar
-        window.onload = function() {
-            commandInput.focus();
-        };
-    </script>
-</body>
-</html>
+// Função para adicionar texto ao terminal
+function addTerminalOutput(text) {
+    const terminalOutput = document.getElementById('terminal-output');
+    const newElement = document.createElement('div');
+    newElement.innerHTML = text;
+    terminalOutput.appendChild(newElement);
+    terminalOutput.scrollTop = terminalOutput.scrollHeight;
+}
+
+// Focar no input quando a página carregar
+window.onload = function() {
+    commandInput.focus();
+};
